@@ -1,0 +1,32 @@
+<div class="text-center container my-5">
+
+<input type="text" class="form-control mb-4" #title placeholder="Article Title" >
+
+<textarea class="form-control mb-4" #body placeholder="Article Body" > </textarea>
+
+<Button class="btn btn-primary mr-3" (click) = "creatPost(title.value , body.value)"> Insert Article</Button>
+
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let post of posts">
+      <div class="item py-3 text-center" > 
+        <img src="https://via.placeholder.com/250X150.jpg">
+        <h4 class="text-primary">{{post.title |titleDots:15 }}</h4>
+        <p class="text-color">{{post.body |titleDots:95}}</p>
+        <Button class="btn btn-primary mr-3" (click) = "updatePost(post,title.value , body.value )">
+            Update
+          </Button>
+      
+          <Button class="btn btn-primary mr-3" (click) = "deletePost(post)">
+            Delete
+          </Button>
+      </div>
+
+    </div>
+
+  </div>
+</div>

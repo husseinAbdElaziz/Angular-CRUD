@@ -1,0 +1,85 @@
+<div class="container pt-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<!--
+  <form [formGroup]="from" #hussein ="ngForm">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" formControlName = "email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" formControlName="password">
+    </div>
+    <button [disabled]="hussein.invalid" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+  
+------------------------------------------------------------------------------------------------------------
+  <ul class="nav nav-pills">
+
+    <li class="nav-item" [class.active]="defView =='Courses'">
+      <a class="nav-link active" href="#" (click)="setView('Courses')">Courses</a>
+    </li>
+  
+    <li class="nav-item" [class.active]="defView == 'Certifications'">
+      <a class="nav-link" href="#" (click)="setView('Certifications')">Certifications</a>
+    </li>
+  </ul>
+  
+  <div [ngSwitch]="defView">
+    <div *ngSwitchCase="'Courses'">List Of Courses</div>
+    <div *ngSwitchCase="'Certifications'">List Of Certifications</div>
+  </div>
+  <br>
+  <input type="text" appInputForm [format]="'lowerCase'">
+  
+  ---------------------------------------------------------------------------------------------------------------
+  <br><br><br><br><br><br>
+  <form #f="ngForm">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+  
+      <input type="email" name="mail" ngModel #mail='ngModel' class="form-control" id="exampleInputEmail1"
+        aria-describedby="emailHelp" placeholder="Enter email" required minlength="20" pattern="husseinabdelaziz8@gmail.com" (change)="dataChang(mail)">
+  
+      <div *ngIf="mail.touched && mail.invalid" class=" alert alert-danger" >
+        <div *ngIf="mail.errors.required"> Please Enter your Email address</div>
+        <div *ngIf="mail.errors.minlength" class=" alert alert-danger"> Minimum Lengh is {{mail.errors.minlength.requiredLength}}</div>
+        <div *ngIf="mail.errors.pattern"> Please Enter your valid pattern</div>
+      </div>
+    
+    </div>
+    
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button [disabled]="f.invalid"  type="submit" class="btn btn-primary">Submit</button>
+  </form>
+-->
+</div>
